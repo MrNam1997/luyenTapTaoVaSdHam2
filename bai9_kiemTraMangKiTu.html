@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkCharacters(characters) {
+        let dem = 0;
+        let arr = ["a","c","f","d","a","c"];
+        for (let i = 0; i < arr.length; i++ ){
+            if (characters == arr[i]){
+                dem ++;
+            }
+        }
+        return dem;
+    }
+    let characters = prompt("enter characters:");
+    alert(characters + " xuất hiện " + checkCharacters(characters) + " lần");
+</script>
+
+</body>
+</html>
